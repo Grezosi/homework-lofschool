@@ -128,7 +128,3 @@ for ($tr = 1; $tr <= $rows; $tr++) {
 }
 
 echo "</table>";
-
-
-// 2.0
-
