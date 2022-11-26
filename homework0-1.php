@@ -36,7 +36,7 @@ const PENCILS = 40;
 
 const PAINT = TOTAL - MARKERS - PENCILS;
 
-echo  PAINT . "<br>";
+echo PAINT . "<br>";
 
 // 1.3
 
@@ -54,28 +54,18 @@ if ($age >= 18 && $age <= 65) {
 
 //1.4
 
-$day = mt_rand(1,11);
+$day = mt_rand(1, 11);
 
 switch ($day) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
     case 1:
         echo "Это рабочий день<br>";
         break;
-    case 2:
-        echo "Это рабочий день<br>";
-        break;
-    case 3:
-        echo "Это рабочий день<br>";
-        break;
-    case 4:
-        echo "Это рабочий день<br>";
-        break;
-    case 5:
-        echo "Это рабочий день<br>";
-        break;
-    case 6:
-        echo "Это выходной<br>";
-        break;
     case 7:
+    case 6:
         echo "Это выходной<br>";
         break;
     default :
@@ -88,7 +78,7 @@ $bmw = ["model" => "x5", "speed" => 120, "doors" => 5, "year" => 2015];
 $toyota = ["model" => "speedy", "speed" => 150, "doors" => 4, "year" => 2055];
 $opel = ["model" => "astra", "speed" => 90, "doors" => 3, "year" => 2003];
 
-$cars = ["bmw"=>$bmw, "toyota" => $toyota, "opel" => $opel];
+$cars = ["bmw" => $bmw, "toyota" => $toyota, "opel" => $opel];
 
 //echo "<pre>";
 
@@ -114,12 +104,12 @@ for ($tr = 1; $tr <= $rows; $tr++) {
     echo "<tr>";
 
     for ($td = 1; $td <= $cols; $td++) {
-        if ($td % 2 == 0 && $tr % 2 == 0){
+        if ($td % 2 == 0 && $tr % 2 == 0) {
             echo "<td>" . "(" . $td * $tr . ")" . "</td>\n";
             //   echo  "(" . $td*$tr. ")";
-        } else if  ($td % 2 != 0 && $tr % 2 != 0){
-            echo "<td>" . "[" . $td * $tr . "]". "</td>\n";
-        }else {
+        } else if ($td % 2 != 0 && $tr % 2 != 0) {
+            echo "<td>" . "[" . $td * $tr . "]" . "</td>\n";
+        } else {
             echo "<td>" . $td * $tr . "</td>\n";
         }
     }

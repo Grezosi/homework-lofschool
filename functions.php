@@ -59,6 +59,11 @@ function task3($int1, $int2)
     }
 }
 
-
-
+//2.6
+function task4($fileName) {
+    $fp = fopen($fileName, 'r');
+    $data = fgets($fp);
+    var_dump($data);
+    fclose($fp);
+}
 
