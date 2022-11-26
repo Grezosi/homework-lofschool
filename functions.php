@@ -19,7 +19,7 @@ function task1($bool, $arr)
 
 //2.2
 
-function task2(... $args)
+function task2(...$args)
 {
     $operation = $args[0];
     $args = func_get_args();
