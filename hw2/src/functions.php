@@ -37,9 +37,9 @@ function task2(...$args)
                 }
             } elseif ($operation == '-') {
                 $result -= $args[$i];
-            } else {
-                echo 'Неправильные аргументы';
             }
+        } else {
+            trigger_error('Некорректный аргумент: ' . "\"" . $args[$i] . "\"");
         }
 
     }
