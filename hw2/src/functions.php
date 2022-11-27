@@ -45,7 +45,8 @@ function task2(...$args)
                 $result -= $args[$i];
             }
         } else {
-            return trigger_error('Некорректный аргумент: ' . "\"" . $args[$i] . "\"");
+            trigger_error('Некорректный аргумент: ' . "\"" . $args[$i] . "\"");
+            return;
         }
 
     }
