@@ -21,7 +21,13 @@ function task2(...$args)
 {
     $operation = $args[0];
     $args = func_get_args();
-    $result = 1;
+    $result = 11;
+
+    if (!in_array($operation, ['+', '-', '*', '/'])) {
+        trigger_error('Некорректный арифметический аргумент: ' . "\"" . $operation . "\"");
+        return;
+    }
+
     for ($i = 1; $i < sizeof($args); $i++) {
         if (is_int($args[$i]) || is_float($args[$i])) {
 
@@ -37,18 +43,15 @@ function task2(...$args)
                 }
             } elseif ($operation == '-') {
                 $result -= $args[$i];
-            } else {
-                trigger_error('Некорректный арифметический аргумент: ' . "\"" . $operation . "\"");
-                break;
             }
         } else {
-            trigger_error('Некорректный аргумент: ' . "\"" . $args[$i] . "\"");
+            return trigger_error('Некорректный аргумент: ' . "\"" . $args[$i] . "\"");
         }
 
     }
-    return $result;
-}
+        return $result;
 
+}
 
 //2.3
 
