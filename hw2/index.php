@@ -14,9 +14,9 @@ $arr = [
 echo task1(true, $arr);
 
 
-echo task2('*', 's', 44, 3, 1232, 2);
+echo task2('1', 11, 44, 3, 1232, 2);
 
-task3(100, 10);
+task3(10, 10);
 
 //2.6
 
