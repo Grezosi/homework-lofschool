@@ -14,13 +14,4 @@ var_dump(str_replace('К', ' ', $str));
 $str2 = 'Две бутылки лимонада';
 var_dump(str_replace('Две','Три', $str2));
 
-//2.6
-
-$fp = fopen('test.txt', 'a');
-
-file_put_contents('test.txt', 'Hello again!');
-
-fclose($fp);
-
-task4('test.txt');
 

@@ -1,30 +1,15 @@
 <?php
 
 
-// 0
-
-const TESTCONSTANTA = 'asd';
-
-$user_name = "Igor";
-
-function show_something(): string
-{
-    return 'SOMETHING';
-}
-
-if (1 == 2) {
-    echo 'hi';
-}
-
 // 1.1
 
-$name = "Mikhail";
+$name = "Михаил";
 
 $age = 25;
 
 echo "Меня зовут $name, мне $age лет<br>";
 
-echo "\!|/’”\\ <br>";
+echo "\"\!|/’”\\ <br>";
 
 //1.2
 
@@ -79,10 +64,6 @@ $toyota = ["model" => "speedy", "speed" => 150, "doors" => 4, "year" => 2055];
 $opel = ["model" => "astra", "speed" => 90, "doors" => 3, "year" => 2003];
 
 $cars = ["bmw" => $bmw, "toyota" => $toyota, "opel" => $opel];
-
-//echo "<pre>";
-
-//print_r($cars["bmw"]);
 
 foreach ($cars as $k => $v) {
     echo "Car $k<br>";
