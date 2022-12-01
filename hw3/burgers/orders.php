@@ -1,4 +1,5 @@
 <?php
+
 require ('functions.php');
 
 $name = $_POST['name'];
