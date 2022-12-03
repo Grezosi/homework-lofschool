@@ -17,12 +17,12 @@ abstract class abstractTariff implements tariffInterface
 
     public function count()
     {
+        $this->price += $this->ppkm * $this->km + $this->ppm * $this->minutes;
        if (!empty($this->services)){
            foreach ($this->services as $service){
                $service->apply($this);
            }
        }
-        $this->price += $this->ppkm * $this->km + $this->ppm * $this->minutes;
         return $this->price;
     }
 

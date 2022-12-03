@@ -5,6 +5,7 @@ class serviceDriver implements serviceInterface
     protected const DRIVER = 100;
     public function apply(tariffInterface $serv)
     {
-        $serv->setPrice(self::DRIVER);
+      $price =  $serv->getPrice() + self::DRIVER;
+      $serv->setPrice($price);
     }
 }
